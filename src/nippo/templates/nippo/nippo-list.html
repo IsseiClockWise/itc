@@ -5,4 +5,8 @@
 {% block content %}
   <h1>こちらは日報アプリのページになります</h1>
   <p>ブロッックタグを使って表示してます</p>
+  <a href={% url 'nippo-create' %}>Create Page</a>
+  <a href={% url 'nippo-detail' 3 %}>
+    Detail Page
+  </a>
 {% endblock %}
